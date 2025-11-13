@@ -143,7 +143,7 @@ export default function Hero() {
       </AnimatePresence>
 
       {/* Content */}
-      <div className="container-custom relative z-10 text-center text-white pt-16">
+      <div className="container-custom relative z-10 text-center text-white pt-8 md:pt-16">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide}

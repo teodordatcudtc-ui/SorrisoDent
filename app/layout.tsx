@@ -40,8 +40,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ro" className="scroll-smooth">
-      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
+    <html lang="ro" className="scroll-smooth overflow-x-hidden">
+      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased overflow-x-hidden`}>
         <Navigation />
         <main className="min-h-screen">
           {children}
