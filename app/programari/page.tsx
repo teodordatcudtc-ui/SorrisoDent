@@ -1,14 +1,9 @@
-import type { Metadata } from 'next'
-import AppointmentForm from '@/components/AppointmentForm'
-import ContactForm from '@/components/ContactForm'
+'use client'
+
 import ContactInfo from '@/components/ContactInfo'
 import { HiPhone, HiLocationMarker, HiClock } from 'react-icons/hi'
-
-export const metadata: Metadata = {
-  title: 'Programări - Sorriso Dent',
-  description: 'Programați-vă pentru o consultație la cabinetul nostru dentar. Oferim programări flexibile și servicii de înaltă calitate. Contactați-ne pentru programări sau întrebări.',
-  keywords: 'programare dentist, programare cabinet dentar, consultație dentară, contact cabinet dentar',
-}
+import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function Programari() {
   return (
@@ -21,31 +16,40 @@ export default function Programari() {
               Programează-te Acum
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Completează formularul de mai jos pentru programare sau contactează-ne direct pentru
+              Pentru programări, vă rugăm să ne contactați telefonic. Suntem aici să vă ajutăm cu 
               orice întrebări despre serviciile noastre.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
-            <div>
-              <AppointmentForm />
-            </div>
-            <div>
-              <ContactInfo />
-            </div>
+          <div className="max-w-4xl mx-auto mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center"
+            >
+              <div className="w-20 h-20 bg-gradient-to-br from-primary-500 to-aqua-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <HiPhone className="w-10 h-10 text-white" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-gray-900">
+                Programare Telefonică
+              </h2>
+              <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                Pentru a programa o consultație sau pentru orice întrebări, vă rugăm să ne sunați. 
+                Echipa noastră este pregătită să vă ajute să găsiți cel mai potrivit moment pentru vizita dvs.
+              </p>
+              <Link
+                href="tel:0724481200"
+                className="inline-flex items-center space-x-3 bg-gradient-to-r from-primary-600 to-aqua-600 text-white px-10 py-5 rounded-full font-semibold text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+              >
+                <HiPhone className="w-6 h-6" />
+                <span>Sună Acum: 0724 481 200</span>
+              </Link>
+            </motion.div>
           </div>
 
-          {/* Contact Form Section */}
           <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-gray-900">
-                Trimite-ne un Mesaj
-              </h2>
-              <p className="text-lg text-gray-600">
-                Ai întrebări sau vrei să ne contactezi? Completează formularul de mai jos.
-              </p>
-            </div>
-            <ContactForm />
+            <ContactInfo />
           </div>
         </div>
       </section>

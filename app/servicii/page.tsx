@@ -3,8 +3,8 @@ import ServicesGrid from '@/components/ServicesGrid'
 
 export const metadata: Metadata = {
   title: 'Servicii Dentare - Sorriso Dent',
-  description: 'Oferim o gamă completă de servicii dentare: implantologie, estetică dentară, ortodonție, albire dentară, tratamente endodontice și multe altele.',
-  keywords: 'servicii dentare, implantologie, estetică dentară, ortodonție, albire dentară, tratamente dentare',
+  description: 'Oferim o gamă completă de servicii dentare: tratamente endodontice, proteză dentară, igienizare dentară și multe altele.',
+  keywords: 'servicii dentare, tratamente endodontice, proteză dentară, igienizare dentară, tratamente dentare',
 }
 
 export default function Servicii() {

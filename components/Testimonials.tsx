@@ -11,15 +11,15 @@ const testimonials = [
     content:
       'Am fost foarte mulțumită de serviciile oferite la Sorriso Dent. Echipa este foarte profesională, cabinetul este modern și tratamentele sunt de înaltă calitate. Recomand cu încredere!',
     rating: 5,
-    treatment: 'Implantologie',
+    treatment: 'Tratamente Endodontice',
   },
   {
     name: 'Ion Georgescu',
     role: 'Pacient',
     content:
-      'Servicii excelente și personal foarte prietenos. Am făcut un tratament de albire dentară și rezultatele au depășit așteptările. Cabinetul este foarte curat și modern.',
+      'Servicii excelente și personal foarte prietenos. Am făcut un tratament de igienizare dentară și rezultatele au depășit așteptările. Cabinetul este foarte curat și modern.',
     rating: 5,
-    treatment: 'Albire Dentară',
+    treatment: 'Igienizare Dentară',
   },
   {
     name: 'Elena Ionescu',
@@ -27,15 +27,15 @@ const testimonials = [
     content:
       'Am avut o experiență fantastică la Sorriso Dent. Medicul a fost foarte atent și mi-a explicat tot procesul. Tratamentul a fost fără durere și rezultatele sunt perfecte.',
     rating: 5,
-    treatment: 'Estetică Dentară',
+    treatment: 'Proteză Dentară',
   },
   {
     name: 'Alexandru Marin',
     role: 'Pacient',
     content:
-      'Cabinet modern, echipament de ultimă generație și echipă foarte competentă. Am făcut un tratament ortodontic și sunt foarte mulțumit de rezultate.',
+      'Cabinet modern, echipament de ultimă generație și echipă foarte competentă. Am făcut un tratament endodontic și sunt foarte mulțumit de rezultate.',
     rating: 5,
-    treatment: 'Ortodonție',
+    treatment: 'Tratamente Endodontice',
   },
 ]
 

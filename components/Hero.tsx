@@ -26,7 +26,7 @@ const slides = [
   {
     title: 'Echipa de Profesioniști',
     subtitle: 'Experiență și dedicare pentru zâmbetul tău',
-    description: 'Echipa noastră de medici stomatologi are peste 15 ani de experiență în domeniu.',
+    description: 'Echipa noastră de medici stomatologi are peste 7 ani de experiență în domeniu.',
     gradient: 'from-accent-gold to-primary-500',
     image: '/images/hero-3.jpg',
     placeholder: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&h=1080&fit=crop&q=80',

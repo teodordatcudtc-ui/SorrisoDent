@@ -19,8 +19,8 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Sorriso Dent - Cabinet Dentar Premium București',
-  description: 'Cabinet dentar modern și profesional în București. Oferim servicii dentare de înaltă calitate: implantologie, estetică dentară, ortodonție și multe altele. Programează-te acum!',
-  keywords: 'cabinet dentar bucurești, dentist bucurești, implantologie, estetică dentară, ortodonție, albire dentară, stomatologie',
+  description: 'Cabinet dentar modern și profesional în București. Oferim servicii dentare de înaltă calitate: tratamente endodontice, proteză dentară, igienizare dentară și multe altele. Programează-te acum!',
+  keywords: 'cabinet dentar bucurești, dentist bucurești, tratamente endodontice, proteză dentară, igienizare dentară, stomatologie',
   authors: [{ name: 'Sorriso Dent' }],
   openGraph: {
     title: 'Sorriso Dent - Cabinet Dentar Premium București',

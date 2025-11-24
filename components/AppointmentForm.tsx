@@ -21,14 +21,9 @@ type AppointmentFormData = z.infer<typeof appointmentSchema>
 
 const services = [
   'Consultație',
-  'Implantologie',
-  'Estetică Dentară',
-  'Ortodonție',
-  'Albire Dentară',
   'Tratamente Endodontice',
   'Proteză Dentară',
   'Igienizare Dentară',
-  'Stomatologie Pediatrică',
   'Alt serviciu',
 ]
 

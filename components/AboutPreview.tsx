@@ -6,7 +6,7 @@ import { HiArrowRight, HiCheckCircle } from 'react-icons/hi'
 
 const features = [
   'Echipament de ultimă generație',
-  'Echipa cu peste 15 ani experiență',
+  'Echipa cu peste 7 ani experiență',
   'Mediu modern și confortabil',
   'Standarde înalte de igienă',
 ]
@@ -27,7 +27,7 @@ export default function AboutPreview() {
             </h2>
             <p className="text-lg text-gray-600 mb-6">
               La Sorriso Dent, ne dedicăm să oferim servicii dentare de cea mai înaltă calitate,
-              într-un mediu modern, confortabil și prietenos. Cu o experiență de peste 15 ani în
+              într-un mediu modern, confortabil și prietenos. Cu o experiență de peste 7 ani în
               domeniul stomatologiei, echipa noastră de profesioniști este dedicată să vă ofere
               cele mai bune tratamente dentare.
             </p>
@@ -66,7 +66,7 @@ export default function AboutPreview() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-aqua-400"></div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white">
-                  <div className="text-7xl font-serif font-bold mb-4">15+</div>
+                  <div className="text-7xl font-serif font-bold mb-4">7+</div>
                   <div className="text-2xl mb-2">Ani de Experiență</div>
                   <div className="text-lg opacity-90">Mii de zâmbete transformate</div>
                 </div>

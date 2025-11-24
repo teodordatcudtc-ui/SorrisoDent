@@ -10,7 +10,7 @@ Pentru ca site-ul să funcționeze complet, trebuie să adaugi următoarele poze
 **Dimensiuni recomandate**: 1920x1080px sau mai mari, format JPG sau WebP
 
 ## Poze Despre Noi
-- `about-hero.jpg` - Poza pentru secțiunea "Despre Noi" (recomandat: cabinet exterior sau interior)
+- `about-hero.jpg` - Poza pentru hero section-ul paginii "Despre Noi" (secțiunea de sus cu "7+ Ani de experiență")
 - `cabinet.jpg` - Poza pentru secțiunea "Cabinetul Nostru" (recomandat: interior cabinet modern)
 
 **Dimensiuni recomandate**: 1200x800px sau mai mari
@@ -18,14 +18,9 @@ Pentru ca site-ul să funcționeze complet, trebuie să adaugi următoarele poze
 ## Poze Servicii
 Creează un subfolder `services/` și adaugă:
 
-- `services/implantologie.jpg` - Poza pentru serviciul Implantologie
-- `services/estetica.jpg` - Poza pentru serviciul Estetică Dentară
-- `services/ortodontie.jpg` - Poza pentru serviciul Ortodonție
-- `services/albire.jpg` - Poza pentru serviciul Albire Dentară
-- `services/endodontie.jpg` - Poza pentru serviciul Tratamente Endodontice
-- `services/proteza.jpg` - Poza pentru serviciul Proteză Dentară
-- `services/igienizare.jpg` - Poza pentru serviciul Igienizare Dentară
-- `services/pediatrica.jpg` - Poza pentru serviciul Stomatologie Pediatrică
+- `services/endodontie.jpg` - Poza pentru serviciul **Tratamente Endodontice**
+- `services/proteza.jpg` - Poza pentru serviciul **Proteză Dentară**
+- `services/igienizare.jpg` - Poza pentru serviciul **Igienizare Dentară**
 
 **Dimensiuni recomandate**: 800x600px sau mai mari
 
@@ -48,14 +43,9 @@ public/
     about-hero.jpg
     cabinet.jpg
     services/
-      implantologie.jpg
-      estetica.jpg
-      ortodontie.jpg
-      albire.jpg
       endodontie.jpg
       proteza.jpg
       igienizare.jpg
-      pediatrica.jpg
 ```
 
 ## Dacă Nu Ai Poze

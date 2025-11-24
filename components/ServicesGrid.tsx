@@ -5,69 +5,12 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { HiCheckCircle, HiCalendar } from 'react-icons/hi'
 import { 
-  FaTooth, 
-  FaSmile, 
-  FaTeeth, 
-  FaGem, 
   FaMicroscope, 
   FaShieldAlt, 
-  FaSprayCan,
-  FaBaby
+  FaSprayCan
 } from 'react-icons/fa'
 
 const allServices = [
-  {
-    icon: FaTooth,
-    title: 'Implantologie',
-    description: 'Implanturi dentare de înaltă calitate folosind tehnologii moderne.',
-    features: [
-      'Implanturi Straumann',
-      'Ghidare chirurgicală 3D',
-      'Proteză imediată',
-      'Garantie pe termen lung',
-    ],
-    color: 'from-primary-500 to-primary-600',
-    image: '/images/services/implantologie.jpg',
-  },
-  {
-    icon: FaSmile,
-    title: 'Estetică Dentară',
-    description: 'Tratamente estetice pentru un zâmbet perfect și natural.',
-    features: [
-      'Fațete dentare ceramice',
-      'Bonding dentar',
-      'Conturizare gingivală',
-      'Design zâmbet',
-    ],
-    color: 'from-aqua-500 to-aqua-600',
-    image: '/images/services/estetica.jpg',
-  },
-  {
-    icon: FaTeeth,
-    title: 'Ortodonție',
-    description: 'Corectarea poziției dinților cu aparate moderne și eficiente.',
-    features: [
-      'Aparate fixe metalice',
-      'Aparate transparente',
-      'Invisalign',
-      'Ortodonție linguală',
-    ],
-    color: 'from-accent-gold to-accent-gold-dark',
-    image: '/images/services/ortodontie.jpg',
-  },
-  {
-    icon: FaGem,
-    title: 'Albire Dentară',
-    description: 'Tratamente profesionale de albire pentru un zâmbet strălucitor.',
-    features: [
-      'Albire în cabinet',
-      'Albire la domiciliu',
-      'Rezultate rapide',
-      'Tehnologie LED',
-    ],
-    color: 'from-primary-400 to-aqua-400',
-    image: '/images/services/albire.jpg',
-  },
   {
     icon: FaMicroscope,
     title: 'Tratamente Endodontice',
@@ -107,19 +50,6 @@ const allServices = [
     color: 'from-aqua-500 to-primary-500',
     image: '/images/services/igienizare.jpg',
   },
-  {
-    icon: FaBaby,
-    title: 'Stomatologie Pediatrică',
-    description: 'Tratamente specializate pentru copii într-un mediu prietenos.',
-    features: [
-      'Tratamente adaptate',
-      'Mediu prietenos',
-      'Prevenție carie',
-      'Sigilare fisuri',
-    ],
-    color: 'from-primary-400 to-aqua-500',
-    image: '/images/services/pediatrica.jpg',
-  },
 ]
 
 export default function ServicesGrid() {
@@ -146,7 +76,7 @@ export default function ServicesGrid() {
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
-              <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-60`}></div>
+              <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-30`}></div>
               <div className="absolute top-4 right-4">
                 <div className={`w-16 h-16 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center ${service.color.replace('from-', 'text-').split(' ')[0]}`}>
                   <IconComponent className="w-8 h-8" />

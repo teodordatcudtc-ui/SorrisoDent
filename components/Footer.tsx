@@ -57,11 +57,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Servicii</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Implantologie</li>
-              <li>Estetică Dentară</li>
-              <li>Ortodonție</li>
-              <li>Albire Dentară</li>
               <li>Tratamente Endodontice</li>
+              <li>Proteză Dentară</li>
+              <li>Igienizare Dentară</li>
             </ul>
           </div>
 

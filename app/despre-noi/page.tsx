@@ -21,12 +21,12 @@ export default function DespreNoi() {
                 într-un mediu modern, confortabil și prietenos.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Cu o experiență de peste 15 ani în domeniul stomatologiei, echipa noastră de
+                Cu o experiență de peste 7 ani în domeniul stomatologiei, echipa noastră de
                 profesioniști este dedicată să vă ofere cele mai bune tratamente dentare, folosind
                 tehnologii de ultimă generație și materiale premium.
               </p>
             </div>
-            <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl animate-slide-in-right">
+            <div className="hidden md:block relative h-96 rounded-2xl overflow-hidden shadow-2xl animate-slide-in-right">
               {imageErrors['about-hero'] ? (
                 <div className="w-full h-full bg-gradient-to-br from-primary-400 to-aqua-400"></div>
               ) : (
@@ -42,7 +42,7 @@ export default function DespreNoi() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary-400/80 to-aqua-400/80"></div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white">
-                  <div className="text-6xl font-serif font-bold mb-2">15+</div>
+                  <div className="text-6xl font-serif font-bold mb-2">7+</div>
                   <div className="text-xl">Ani de experiență</div>
                 </div>
               </div>
@@ -94,44 +94,57 @@ export default function DespreNoi() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-gray-900">
-              Echipa Noastră
+              Echipa Sorriso Dent
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               O echipă de profesioniști dedicați, cu experiență vastă în domeniul stomatologiei
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Dr. Maria Popescu',
-                role: 'Medic Stomatolog Principal',
-                description: 'Specializată în implantologie și estetică dentară, cu peste 15 ani de experiență.',
-              },
-              {
-                name: 'Dr. Alexandru Ionescu',
-                role: 'Medic Stomatolog',
-                description: 'Specialist în ortodonție și protetică dentară, cu abordare modernă și eficientă.',
-              },
-              {
-                name: 'Dr. Elena Georgescu',
-                role: 'Medic Stomatolog',
-                description: 'Expertă în endodonție și tratamente conservatoare, dedicată sănătății dentare.',
-              },
-            ].map((member, index) => (
-              <div
-                key={index}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-              >
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary-400 to-aqua-400 flex items-center justify-center text-4xl text-white font-bold">
-                  {member.name.split(' ').map(n => n[0]).join('')}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 className="text-3xl font-serif font-bold mb-4 text-gray-900">
+                    Profesioniști Dedați
+                  </h3>
+                  <p className="text-lg text-gray-600 mb-4">
+                    Echipa noastră este formată din medici stomatologi specializați, cu experiență în 
+                    tratamente endodontice, proteză dentară și igienizare dentară. Fiecare membru al 
+                    echipei aduce expertiză și dedicare pentru a vă oferi cele mai bune servicii dentare.
+                  </p>
+                  <p className="text-lg text-gray-600 mb-4">
+                    Folosim tehnologii moderne și materiale premium pentru a asigura tratamente precise, 
+                    confortabile și cu rezultate durabile. Abordarea noastră este centrată pe pacient, 
+                    punând accent pe comunicare, confort și satisfacție.
+                  </p>
+                  <p className="text-lg text-gray-600">
+                    La Sorriso Dent, credem că fiecare zâmbet merită atenție personalizată și tratament 
+                    de cea mai înaltă calitate. Echipa noastră este pregătită să vă ajute să obțineți 
+                    zâmbetul pe care îl doriți.
+                  </p>
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-center mb-2 text-gray-900">
-                  {member.name}
-                </h3>
-                <p className="text-primary-600 text-center font-semibold mb-4">{member.role}</p>
-                <p className="text-gray-600 text-center">{member.description}</p>
+                <div className="space-y-6">
+                  <div className="p-6 rounded-xl bg-gradient-to-br from-primary-50 to-transparent">
+                    <h4 className="text-xl font-serif font-bold mb-2 text-gray-900">Experiență</h4>
+                    <p className="text-gray-600">
+                      Peste 7 ani de experiență în domeniul stomatologiei, cu mii de pacienți mulțumiți.
+                    </p>
+                  </div>
+                  <div className="p-6 rounded-xl bg-gradient-to-br from-aqua-50 to-transparent">
+                    <h4 className="text-xl font-serif font-bold mb-2 text-gray-900">Specializare</h4>
+                    <p className="text-gray-600">
+                      Specializare în tratamente endodontice, proteză dentară și igienizare profesională.
+                    </p>
+                  </div>
+                  <div className="p-6 rounded-xl bg-gradient-to-br from-accent-gold-light/30 to-transparent">
+                    <h4 className="text-xl font-serif font-bold mb-2 text-gray-900">Abordare Modernă</h4>
+                    <p className="text-gray-600">
+                      Folosim cele mai noi tehnologii și tehnici pentru tratamente eficiente și confortabile.
+                    </p>
+                  </div>
+                </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
@@ -205,13 +218,6 @@ export default function DespreNoi() {
                   onError={() => setImageErrors(prev => ({ ...prev, 'cabinet': true }))}
                 />
               )}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-300/40 to-aqua-300/40"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <HiSparkles className="w-12 h-12 mx-auto mb-4" />
-                  <div className="text-2xl font-serif font-bold">Spațiu Premium</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

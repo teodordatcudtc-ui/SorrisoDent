@@ -4,36 +4,29 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { HiArrowRight } from 'react-icons/hi'
-import { FaTooth, FaSmile, FaTeeth, FaGem } from 'react-icons/fa'
+import { FaMicroscope, FaShieldAlt, FaSprayCan } from 'react-icons/fa'
 
 const services = [
   {
-    icon: FaTooth,
-    title: 'Implantologie',
-    description: 'Implanturi dentare de înaltă calitate pentru un zâmbet natural și durabil.',
-    color: 'from-primary-500 to-primary-600',
-    image: '/images/services/implantologie.jpg',
+    icon: FaMicroscope,
+    title: 'Tratamente Endodontice',
+    description: 'Tratamente de canal cu tehnologie modernă și fără durere.',
+    color: 'from-aqua-400 to-primary-400',
+    image: '/images/services/endodontie.jpg',
   },
   {
-    icon: FaSmile,
-    title: 'Estetică Dentară',
-    description: 'Fațete dentare, bonding și alte tratamente pentru un zâmbet perfect.',
-    color: 'from-aqua-500 to-aqua-600',
-    image: '/images/services/estetica.jpg',
+    icon: FaShieldAlt,
+    title: 'Proteză Dentară',
+    description: 'Proteze dentare personalizate pentru confort și estetică maximă.',
+    color: 'from-primary-500 to-accent-gold',
+    image: '/images/services/proteza.jpg',
   },
   {
-    icon: FaTeeth,
-    title: 'Ortodonție',
-    description: 'Aparate dentare fixe și transparente pentru alinierea perfectă a dinților.',
-    color: 'from-accent-gold to-accent-gold-dark',
-    image: '/images/services/ortodontie.jpg',
-  },
-  {
-    icon: FaGem,
-    title: 'Albire Dentară',
-    description: 'Tratamente profesionale de albire pentru un zâmbet strălucitor.',
-    color: 'from-primary-400 to-aqua-400',
-    image: '/images/services/albire.jpg',
+    icon: FaSprayCan,
+    title: 'Igienizare Dentară',
+    description: 'Curățare profesională și prevenție pentru sănătatea dentară.',
+    color: 'from-aqua-500 to-primary-500',
+    image: '/images/services/igienizare.jpg',
   },
 ]
 
@@ -57,56 +50,58 @@ export default function ServicesPreview() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => {
-            const IconComponent = service.icon
-            return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ y: -8 }}
-                className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
-              >
-                {/* Image Background */}
-                <div className="relative h-40 overflow-hidden">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                  />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-70`}></div>
-                  <div className="absolute top-3 right-3">
-                    <div className={`w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center ${service.color.replace('from-', 'text-').split(' ')[0]}`}>
-                      <IconComponent className="w-6 h-6" />
+        <div className="flex justify-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">
+            {services.map((service, index) => {
+              const IconComponent = service.icon
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  whileHover={{ y: -8 }}
+                  className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+                >
+                  {/* Image Background */}
+                  <div className="relative h-56 overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                    <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-30`}></div>
+                    <div className="absolute top-4 right-4">
+                      <div className={`w-16 h-16 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center ${service.color.replace('from-', 'text-').split(' ')[0]}`}>
+                        <IconComponent className="w-8 h-8" />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="p-6">
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`}
-                  ></div>
-                  <div className="relative z-10">
-                    <h3 className="text-xl font-serif font-bold mb-2 text-gray-900">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-600 mb-4 text-sm">{service.description}</p>
-                    <Link
-                      href="/servicii"
-                      className="inline-flex items-center space-x-2 text-primary-600 font-semibold group-hover:text-primary-700 transition-colors text-sm"
-                    >
-                      <span>Află mai multe</span>
-                      <HiArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </Link>
+                  <div className="p-8">
+                    <div
+                      className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`}
+                    ></div>
+                    <div className="relative z-10">
+                      <h3 className="text-2xl font-serif font-bold mb-3 text-gray-900">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-600 mb-4 text-base">{service.description}</p>
+                      <Link
+                        href="/servicii"
+                        className="inline-flex items-center space-x-2 text-primary-600 font-semibold group-hover:text-primary-700 transition-colors text-base"
+                      >
+                        <span>Află mai multe</span>
+                        <HiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-            )
-          })}
+                </motion.div>
+              )
+            })}
+          </div>
         </div>
 
         <motion.div
