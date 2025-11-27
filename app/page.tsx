@@ -8,14 +8,14 @@ import WhyChooseUs from '@/components/WhyChooseUs'
 import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
-  title: 'Sorriso Dent - Cabinet Dentar București',
-  description: 'Cabinet dentar modern în București. Tratamente endodontice, proteză dentară, igienizare. Programează-te la 0724 481 200!',
+  title: 'Sorriso Dent - Cabinet Dentar Sector 3',
+  description: 'Cabinet dentar modern în Sector 3, București. Tratamente endodontice, proteză dentară, igienizare. Programează-te la 0724 481 200!',
   alternates: {
     canonical: 'https://www.sorrisodent.ro',
   },
   openGraph: {
-    title: 'Sorriso Dent - Cabinet Dentar București',
-    description: 'Cabinet dentar modern în București. Tratamente endodontice, proteză dentară, igienizare. Programează-te acum!',
+    title: 'Sorriso Dent - Cabinet Dentar Sector 3',
+    description: 'Cabinet dentar modern în Sector 3, București. Tratamente endodontice, proteză dentară, igienizare. Programează-te acum!',
     url: 'https://www.sorrisodent.ro',
     type: 'website',
   },
@@ -34,15 +34,15 @@ export default function Home() {
       {/* SEO Content Section - Hidden visually but readable by search engines */}
       <section className="sr-only">
         <div className="container-custom py-8">
-          <h2>Cabinet Dentar Sorriso Dent București</h2>
+          <h2>Cabinet Dentar Sorriso Dent Sector 3</h2>
           <p>
-            Sorriso Dent este un <Link href="/despre-noi">cabinet dentar modern și profesional</Link> situat în București, Sector 3, 
+            Sorriso Dent este un <Link href="/despre-noi">cabinet dentar modern și profesional</Link> situat în Sector 3, București, 
             pe Bulevardul Camil Ressu nr. 66. Oferim <Link href="/servicii">servicii dentare de înaltă calitate</Link> într-un 
             mediu confortabil și prietenos, folosind tehnologii de ultimă generație și materiale premium.
           </p>
-          <h3>Servicii Dentare București</h3>
+          <h3>Servicii Dentare Sector 3</h3>
           <p>
-            La cabinetul nostru dentar din București, oferim o gamă completă de <Link href="/servicii">servicii dentare</Link> 
+            La cabinetul nostru dentar din Sector 3, București, oferim o gamă completă de <Link href="/servicii">servicii dentare</Link> 
             pentru a vă asigura sănătatea și frumusețea zâmbetului. Specializăm în tratamente 
             endodontice, proteză dentară și igienizare dentară profesională.
           </p>

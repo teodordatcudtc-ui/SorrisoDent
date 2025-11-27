@@ -9,7 +9,7 @@ import { HiArrowRight, HiChevronLeft, HiChevronRight } from 'react-icons/hi'
 const slides = [
   {
     title: 'Zâmbetul Perfect începe aici',
-    subtitle: 'Servicii dentare premium în București',
+    subtitle: 'Servicii dentare premium în Sector 3, București',
     description: 'Oferim tratamente dentare de înaltă calitate într-un mediu modern și confortabil.',
     gradient: 'from-primary-500 to-aqua-500',
     image: '/images/hero-1.jpg',

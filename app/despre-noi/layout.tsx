@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Despre Noi - Sorriso Dent',
-  description: 'Echipa Sorriso Dent București: peste 7 ani experiență. Cabinet modern cu tehnologie avansată și profesionalism.',
+  description: 'Echipa Sorriso Dent Sector 3: peste 7 ani experiență. Cabinet modern cu tehnologie avansată și profesionalism.',
   keywords: 'despre cabinet dentar, echipa dentară, profesionalism, experiență',
   alternates: {
     canonical: 'https://www.sorrisodent.ro/despre-noi',

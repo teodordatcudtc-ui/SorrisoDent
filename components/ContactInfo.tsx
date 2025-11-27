@@ -30,7 +30,7 @@ export default function ContactInfo() {
                 0724 481 200
               </a>
             </div>
-          </div>
+          </div>Echipa Noast
 
           <div className="flex items-start space-x-4">
             <div className="w-12 h-12 bg-aqua-100 rounded-full flex items-center justify-center flex-shrink-0">

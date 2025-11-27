@@ -20,16 +20,16 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.sorrisodent.ro'),
-  title: 'Sorriso Dent - Cabinet Dentar București',
-  description: 'Cabinet dentar modern în București. Tratamente endodontice, proteză dentară, igienizare. Programează-te la 0724 481 200!',
-  keywords: 'cabinet dentar bucurești, dentist bucurești, tratamente endodontice, proteză dentară, igienizare dentară, stomatologie',
+  title: 'Sorriso Dent - Cabinet Dentar Sector 3',
+  description: 'Cabinet dentar modern în Sector 3, București. Tratamente endodontice, proteză dentară, igienizare. Programează-te la 0724 481 200!',
+  keywords: 'cabinet dentar sector 3, dentist sector 3, cabinet dentar bucurești sector 3, tratamente endodontice, proteză dentară, igienizare dentară, stomatologie',
   authors: [{ name: 'Sorriso Dent' }],
   alternates: {
     canonical: 'https://www.sorrisodent.ro',
   },
   openGraph: {
-    title: 'Sorriso Dent - Cabinet Dentar București',
-    description: 'Cabinet dentar modern în București. Tratamente endodontice, proteză dentară, igienizare. Programează-te acum!',
+    title: 'Sorriso Dent - Cabinet Dentar Sector 3',
+    description: 'Cabinet dentar modern în Sector 3, București. Tratamente endodontice, proteză dentară, igienizare. Programează-te acum!',
     url: 'https://www.sorrisodent.ro',
     siteName: 'Sorriso Dent',
     type: 'website',
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
         url: '/images/hero-1.jpg',
         width: 1200,
         height: 630,
-        alt: 'Sorriso Dent - Cabinet Dentar București',
+        alt: 'Sorriso Dent - Cabinet Dentar Sector 3',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sorriso Dent - Cabinet Dentar București',
-    description: 'Cabinet dentar modern în București. Tratamente endodontice, proteză dentară, igienizare.',
+    title: 'Sorriso Dent - Cabinet Dentar Sector 3',
+    description: 'Cabinet dentar modern în Sector 3, București. Tratamente endodontice, proteză dentară, igienizare.',
   },
   robots: {
     index: true,

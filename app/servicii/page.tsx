@@ -3,14 +3,14 @@ import ServicesGrid from '@/components/ServicesGrid'
 
 export const metadata: Metadata = {
   title: 'Servicii Dentare - Sorriso Dent',
-  description: 'Servicii dentare București: tratamente endodontice, proteză dentară, igienizare. Cabinet modern cu tehnologie avansată.',
+  description: 'Servicii dentare Sector 3: tratamente endodontice, proteză dentară, igienizare. Cabinet modern cu tehnologie avansată.',
   keywords: 'servicii dentare, tratamente endodontice, proteză dentară, igienizare dentară, tratamente dentare',
   alternates: {
     canonical: 'https://www.sorrisodent.ro/servicii',
   },
   openGraph: {
     title: 'Servicii Dentare - Sorriso Dent',
-    description: 'Servicii dentare București: tratamente endodontice, proteză dentară, igienizare. Cabinet modern cu tehnologie avansată.',
+    description: 'Servicii dentare Sector 3: tratamente endodontice, proteză dentară, igienizare. Cabinet modern cu tehnologie avansată.',
     url: 'https://www.sorrisodent.ro/servicii',
     type: 'website',
   },

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Programări - Sorriso Dent',
-  description: 'Programează-te la Sorriso Dent București. Sună la 0724 481 200 pentru consultație dentară. Program flexibil.',
+  description: 'Programează-te la Sorriso Dent Sector 3. Sună la 0724 481 200 pentru consultație dentară. Program flexibil.',
   keywords: 'programare dentist, programare cabinet dentar, consultație dentară, contact cabinet dentar',
   alternates: {
     canonical: 'https://www.sorrisodent.ro/programari',

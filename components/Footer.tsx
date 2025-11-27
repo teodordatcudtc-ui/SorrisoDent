@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-serif font-bold text-white mb-4">Sorriso Dent</h3>
             <p className="text-gray-400 mb-4">
-              Cabinet dentar premium în București, dedicat sănătății și frumuseții zâmbetului tău.
+              Cabinet dentar premium în Sector 3, București, dedicat sănătății și frumuseții zâmbetului tău.
             </p>
             <div className="flex space-x-4">
               <a
@@ -95,6 +95,17 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} Sorriso Dent. Toate drepturile rezervate.</p>
+          <p className="mt-2">
+            Realizat de{' '}
+            <a
+              href="https://clickfixit.ro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-400 hover:text-primary-300 transition-colors"
+            >
+              ClickFixIt
+            </a>
+          </p>
         </div>
       </div>
     </footer>
